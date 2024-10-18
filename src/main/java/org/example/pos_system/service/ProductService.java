@@ -12,13 +12,18 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
+    public List<Product> getProductsByBusiness(Long businessId) {
+        // Logic to fetch products by business
+        return List.of(); // Update this logic accordingly
+    }
+
+    // Method to get all products
     public List<Product> getAllProducts() {
-        return productRepository.findAll();
+        return productRepository.findAll(); // Get all products
     }
 
+    // Method to save a new product
     public Product saveProduct(Product product) {
-        return productRepository.save(product);
+        return productRepository.save(product); // Save the product
     }
-
-    // Additional methods as needed
 }
